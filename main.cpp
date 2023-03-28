@@ -62,6 +62,7 @@ int main()
         }
         else
             cout<<"Refuzat\n";
+        drum.clear();
         getline(std::cin, cuvant);
     }while(strcmp(cuvant.c_str(), "=") != 0);
     return 0;
