@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    const string init = "q0";
+    string init;
     vector<string> drum;
     vector<array<string, 3> > tranzitii;
     vector<string> finale;
@@ -20,7 +20,7 @@ int main()
 
     int n = 0; /// nr tranzitii
     in>>n;
-
+    in>>init;
     for(int i = 0; i<n; i++)
     {
         string x,y,z;
@@ -62,8 +62,8 @@ int main()
         }
         else
             cout<<"Refuzat\n";
-        drum.clear();
         getline(std::cin, cuvant);
+        drum.clear();
     }while(strcmp(cuvant.c_str(), "=") != 0);
     return 0;
 }
